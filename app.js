@@ -7,8 +7,18 @@ const app = Vue.createApp({
       name: ''
     };
   },
+  computed: {
+    // value
+    fullname() {
+      console.log('Running again...');
+      if (this.name === ''){
+        return '';
+      }
+      return this.name;
+    }
+  },
   methods: {
-
+    // recalc values
     add(num){
       this.counter = this.counter + num;
     },
