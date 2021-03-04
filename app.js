@@ -8,6 +8,7 @@ const app = Vue.createApp({
     };
   },
   methods: {
+
     add(num){
       this.counter = this.counter + num;
     },
@@ -22,7 +23,11 @@ const app = Vue.createApp({
     },
     resetInput(){
       this.name = '';
+    },
+    outputFullname(){
+      return this.name;
     }
+
   }
 });
 
