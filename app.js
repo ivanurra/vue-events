@@ -59,7 +59,6 @@ const app = Vue.createApp({
     outputFullname(){
       return this.name;
     }
-
   }
 });
 
